@@ -1,0 +1,39 @@
+{
+  "name": "defender-game",
+  "version": "1.0.0",
+  "description": "Browser based game",
+  "keywords": [
+    "game"
+  ],
+  "homepage": "https://github.com/basy827/ajs-homeworks#readme",
+  "bugs": {
+    "url": "https://github.com/basy827/ajs-homeworks/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basy827/ajs-homeworks.git"
+  },
+  "license": "ISC",
+  "author": "basy827",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@babel/cli": "^8.0.6",
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
+    "@eslint/css": "^2.0.1",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.1",
+    "@eslint/markdown": "^8.0.3",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0"
+  },
+  "dependencies": {
+    "core-js": "^3.50.0"
+  }
+}

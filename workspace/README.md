@@ -140,9 +140,9 @@ const alive = characters.filter(item => item.health > 0);
 ```
 
 Содержимое `.eslintignore`:
-```
+
 dist
-```
+
 
 Содержимое `.eslintrc.js`:
 ```js
