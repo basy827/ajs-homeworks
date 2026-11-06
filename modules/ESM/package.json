@@ -1,0 +1,14 @@
+{
+  "name": "esm-homework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Native ES modules in the browser",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
