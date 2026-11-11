@@ -7,7 +7,22 @@ export default class Cart {
         this._items.push(item);
     }
 
+    getTotalPrice(): number {
+        return this._items.reduce((total, item) => total + item.price, 0);
+    }
+    getTotalPriceWithDiscount(discount: number): number {
+        const totalPrice = this.getTotalPrice();
+        return totalPrice - (totalPrice * discount / 100);
+    }
+    removeItem(id: number): void {
+        const index = this._items.findIndex((item) => item.id === id);
+
+        if (index !== -1) {
+            this._items.splice(index, 1);
+        }
+    }
+
     get items(): Buyable[] {
-        return [...this._items]; 
+        return [...this._items];
     }
 }
